@@ -4,9 +4,10 @@ On-Premises Document Intelligence Ingestion
 
 ## Various notes
 
-All `yaml` files in the `/docint` folder are docker compose files.
+All `yaml` files in the `compose/` folder are docker compose files.
 
 To start a Form recognizer service, type:
+
 `docker compose -f docint-generaldoc.yaml up`
 
 The containers images can be prepositioned with this command:
