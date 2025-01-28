@@ -8,3 +8,13 @@ services:
       - apiKey=${FORM_RECOGNIZER_KEY}
     ports:
       - "5000:5000"
+    networks:
+      - docint
+
+networks:
+  docint:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.40.0.0/24
+          gateway: 172.40.0.1
